@@ -16,6 +16,7 @@ export default {
 
 ## Config
 fileRegex: a RegExp object of file name
+
 processor: an unified processor like `unified().use(remarkParse).use(remarkRehype).use(rehypeStringify)` 
 
 ```js
