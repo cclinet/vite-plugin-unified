@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-unified-compiler",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Vite plugin that compiles files using unified.js.",
   "main": "index.js",
   "author": "cclinet <cclinet@outlook.com>",
@@ -36,7 +36,7 @@
   ],
   "scripts": {
     "build": "tsc && vite build  && cp types.d.ts dist/index.d.ts",
-    "publish": "yarn publish --access public"
+    "pub": "yarn publish --access public"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
