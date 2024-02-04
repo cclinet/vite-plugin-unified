@@ -1,0 +1,51 @@
+{
+  "name": "vite-plugin-unified-compiler",
+  "version": "0.0.1",
+  "description": "Vite plugin that compiles files using unified.js.",
+  "main": "index.js",
+  "author": "cclinet <cclinet@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cclinet/vite-plugin-unified-compiler"
+  },
+  "bugs": {
+    "url": "https://github.com/cclinet/vite-plugin-unified-compiler/issues"
+  },
+  "homepage": "https://github.com/cclinet/vite-plugin-unified-compiler",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "html",
+    "markdown",
+    "unified"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build  && cp types.d.ts dist/index.d.ts",
+    "publish": "yarn publish --access public"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "optionalDependencies": {
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "unified": "^11.0.4"
+  }
+}
